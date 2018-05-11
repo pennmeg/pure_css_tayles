@@ -1,4 +1,5 @@
 $brown: #CC9D6D;
+$dk-brown: #A37D57;
 $black: black;
 $white: white;
 $grey: #E7E8E9;
@@ -8,7 +9,7 @@ $ear: polygon(50% 0, 0% 100%, 100% 100%);
   position: absolute;
   width: 20%;
   height: 12%;
-  top: 40%;
+  top: 30%;
   background-color: $black;
   border-radius: 50%;
 }
@@ -28,6 +29,22 @@ $ear: polygon(50% 0, 0% 100%, 100% 100%);
   -webkit-clip-path: $ear;
   clip-path: $ear;
 }
+%leg-back {
+  position: absolute;
+  height: 50%;
+  width: 30%;
+  bottom: -2%;
+  background-color: $brown;
+  border-radius: 46% 46% 40% 40%;
+}
+%leg-front {
+  position: absolute;
+  height: 55%;
+  width: 30%;
+  bottom: -4%;
+  background-color: $brown;
+  border-radius: 0% 0% 35% 35%;
+}
 /* Basic Box Sizing */
 #box {
   position: relative;
@@ -43,6 +60,17 @@ $ear: polygon(50% 0, 0% 100%, 100% 100%);
   height: 32%;
   background-color: $brown;
   border-radius: 40% 40% 100% 100%;
+  z-index: 2;
+}
+#head-copy{
+  position: absolute;
+  width: 13%;
+  height: 32%;
+  top: 0.8%;
+  left: 0.5%;
+  background-color: $dk-brown;
+  border-radius: 40% 40% 100% 100%;
+  z-index: 1;
 }
 #nose {
   position: absolute;
@@ -55,11 +83,11 @@ $ear: polygon(50% 0, 0% 100%, 100% 100%);
 }
 #eyeL{
   @extend %eye;
-  left: 20%;
+  left: 15%;
 }
 #eyeR {
   @extend %eye;
-  right: 20%;
+  right: 15%;
 }
 .pupil {
   position: absolute;
@@ -91,4 +119,51 @@ $ear: polygon(50% 0, 0% 100%, 100% 100%);
   @extend %ear-copy;
   right: -42%;
   transform: rotate(352deg);
+}
+#body {
+  position: absolute;
+  width: 16%;
+  height: 70%;
+  bottom: 10%;
+  left: -1%;
+  background-color: $brown;
+  border-radius: 100% 100% 40% 40%;
+}
+#backL {
+  @extend %leg-back;
+  left: -15%;
+  transform: rotate(350deg);
+}
+#backR {
+  @extend %leg-back;
+  right: -15%;
+  transform: rotate(10deg);
+}
+#frontL {
+  @extend %leg-front;
+  border-right: 2px solid $dk-brown;
+}
+#frontR {
+  @extend %leg-front;
+  left: 68%;
+  border-left: 2px solid $dk-brown;
+}
+#frontL-copy {
+  position: absolute;
+  width: 80%;
+  height: 76%;
+  bottom: 8%;
+  background-color: $brown;
+  border-left: 2px solid $dk-brown;
+  border-radius: 0% 0% 0% 22%;
+}
+#frontR-copy {
+  position: absolute;
+  width: 80%;
+  height: 77%;
+  left: 12%;
+  bottom: 6%;
+  background-color: $brown;
+  border-right: 2px solid $dk-brown;
+  border-radius: 0% 0% 22% 0%;
 }

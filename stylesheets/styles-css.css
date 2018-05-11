@@ -2,7 +2,7 @@
   position: absolute;
   width: 20%;
   height: 12%;
-  top: 40%;
+  top: 30%;
   background-color: black;
   border-radius: 50%; }
 
@@ -22,6 +22,22 @@
   -webkit-clip-path: polygon(50% 0, 0% 100%, 100% 100%);
   clip-path: polygon(50% 0, 0% 100%, 100% 100%); }
 
+#backL, #backR {
+  position: absolute;
+  height: 50%;
+  width: 30%;
+  bottom: -2%;
+  background-color: #CC9D6D;
+  border-radius: 46% 46% 40% 40%; }
+
+#frontL, #frontR {
+  position: absolute;
+  height: 55%;
+  width: 30%;
+  bottom: -4%;
+  background-color: #CC9D6D;
+  border-radius: 0% 0% 35% 35%; }
+
 /* Basic Box Sizing */
 #box {
   position: relative;
@@ -36,7 +52,18 @@
   width: 14%;
   height: 32%;
   background-color: #CC9D6D;
-  border-radius: 40% 40% 100% 100%; }
+  border-radius: 40% 40% 100% 100%;
+  z-index: 2; }
+
+#head-copy {
+  position: absolute;
+  width: 13%;
+  height: 32%;
+  top: 0.8%;
+  left: 0.5%;
+  background-color: #A37D57;
+  border-radius: 40% 40% 100% 100%;
+  z-index: 1; }
 
 #nose {
   position: absolute;
@@ -48,10 +75,10 @@
   border-radius: 48% 48% 100% 100%; }
 
 #eyeL {
-  left: 20%; }
+  left: 15%; }
 
 #eyeR {
-  right: 20%; }
+  right: 15%; }
 
 .pupil {
   position: absolute;
@@ -79,5 +106,48 @@
 #earR-copy {
   right: -42%;
   transform: rotate(352deg); }
+
+#body {
+  position: absolute;
+  width: 16%;
+  height: 70%;
+  bottom: 10%;
+  left: -1%;
+  background-color: #CC9D6D;
+  border-radius: 100% 100% 40% 40%; }
+
+#backL {
+  left: -15%;
+  transform: rotate(350deg); }
+
+#backR {
+  right: -15%;
+  transform: rotate(10deg); }
+
+#frontL {
+  border-right: 2px solid #A37D57; }
+
+#frontR {
+  left: 68%;
+  border-left: 2px solid #A37D57; }
+
+#frontL-copy {
+  position: absolute;
+  width: 80%;
+  height: 76%;
+  bottom: 8%;
+  background-color: #CC9D6D;
+  border-left: 2px solid #A37D57;
+  border-radius: 0% 0% 0% 22%; }
+
+#frontR-copy {
+  position: absolute;
+  width: 80%;
+  height: 77%;
+  left: 12%;
+  bottom: 6%;
+  background-color: #CC9D6D;
+  border-right: 2px solid #A37D57;
+  border-radius: 0% 0% 22% 0%; }
 
 /*# sourceMappingURL=styles-css.css.map */

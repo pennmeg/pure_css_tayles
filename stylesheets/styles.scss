@@ -1,6 +1,9 @@
 $brown: #CC9D6D;
 $black: black;
 $white: white;
+$grey: #E7E8E9;
+$ear: polygon(50% 0, 0% 100%, 100% 100%);
+
 %eye {
   position: absolute;
   width: 20%;
@@ -8,6 +11,22 @@ $white: white;
   top: 40%;
   background-color: $black;
   border-radius: 50%;
+}
+%ear{
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  top: -8%;
+  background-color: $brown;
+}
+%ear-copy {
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  top: 1%;
+  background-color: $brown;
+  -webkit-clip-path: $ear;
+  clip-path: $ear;
 }
 /* Basic Box Sizing */
 #box {
@@ -32,7 +51,7 @@ $white: white;
   bottom: 3%;
   left: 40%;
   background-color: $black;
-  border-radius: 50% 50% 100% 100%;
+  border-radius: 48% 48% 100% 100%;
 }
 #eyeL{
   @extend %eye;
@@ -50,4 +69,26 @@ $white: white;
   left: 10%;
   background-color: $white;
   border-radius: 50%;
+}
+#earL {
+  @extend %ear;
+  left: -15%;
+  border-radius: 0% 40% 0% 0%;
+  transform: rotate(280deg);
+}
+#earL-copy {
+  @extend %ear-copy;
+  left: -44%;
+  transform: rotate(8deg);
+}
+#earR {
+  @extend %ear;
+  right: -15%;
+  border-radius: 40% 0% 0% 0%;
+  transform: rotate(80deg);
+}
+#earR-copy {
+  @extend %ear-copy;
+  right: -42%;
+  transform: rotate(352deg);
 }

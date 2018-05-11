@@ -1,0 +1,49 @@
+#eyeL, #eyeR {
+  position: absolute;
+  width: 20%;
+  height: 12%;
+  top: 40%;
+  background-color: black;
+  border-radius: 50%; }
+
+/* Basic Box Sizing */
+#box {
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  display: block;
+  width: 600px;
+  height: 420px; }
+
+#head {
+  position: absolute;
+  width: 14%;
+  height: 32%;
+  background-color: #CC9D6D;
+  border-radius: 40% 40% 100% 100%; }
+
+#nose {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  bottom: 3%;
+  left: 40%;
+  background-color: black;
+  border-radius: 50% 50% 100% 100%; }
+
+#eyeL {
+  left: 20%; }
+
+#eyeR {
+  right: 20%; }
+
+.pupil {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  top: 10%;
+  left: 10%;
+  background-color: white;
+  border-radius: 50%; }
+
+/*# sourceMappingURL=styles-css.css.map */

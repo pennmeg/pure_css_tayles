@@ -17,7 +17,7 @@
   position: absolute;
   width: 40%;
   height: 20%;
-  top: 1%;
+  top: 2%;
   background-color: #CC9D6D;
   -webkit-clip-path: polygon(50% 0, 0% 100%, 100% 100%);
   clip-path: polygon(50% 0, 0% 100%, 100% 100%); }
@@ -104,7 +104,7 @@
   transform: rotate(80deg); }
 
 #earR-copy {
-  right: -42%;
+  right: -44%;
   transform: rotate(352deg); }
 
 #body {

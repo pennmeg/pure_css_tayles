@@ -24,7 +24,7 @@ $ear: polygon(50% 0, 0% 100%, 100% 100%);
   position: absolute;
   width: 40%;
   height: 20%;
-  top: 1%;
+  top: 2%;
   background-color: $brown;
   -webkit-clip-path: $ear;
   clip-path: $ear;
@@ -117,7 +117,7 @@ $ear: polygon(50% 0, 0% 100%, 100% 100%);
 }
 #earR-copy {
   @extend %ear-copy;
-  right: -42%;
+  right: -44%;
   transform: rotate(352deg);
 }
 #body {

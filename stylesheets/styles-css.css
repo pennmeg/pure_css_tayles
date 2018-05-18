@@ -150,4 +150,19 @@
   border-right: 2px solid #A37D57;
   border-radius: 0% 0% 22% 0%; }
 
+/* Jenga */
+#jenga {
+  position: absolute;
+  width: 10%;
+  height: 8%;
+  bottom: 0%;
+  right: 70%;
+  background-color: #7c3915; }
+
+#top {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-color: red; }
+
 /*# sourceMappingURL=styles-css.css.map */

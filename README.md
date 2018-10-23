@@ -11,7 +11,6 @@
 * https://github.com/pennmeg/pure_css_image
 * https://github.com/pennmeg/pure_css_laptop
 * https://github.com/pennmeg/pure_css_pug
-* https://github.com/pennmeg/pure_css_tayles
 * https://github.com/pennmeg/pure_css_cat
 * https://github.com/pennmeg/pure_css_duck
 * https://github.com/pennmeg/pure_css_ocanada
